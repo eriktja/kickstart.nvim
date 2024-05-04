@@ -273,7 +273,6 @@ require('lazy').setup({
   -- { 'github/copilot.vim', opts = {} },
   {
     'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
     build = ':Copilot auth',
     opts = {
       suggestion = { enabled = false },
