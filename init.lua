@@ -154,6 +154,12 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Move lines like VS Code
+vim.keymap.set('n', '<A-j>', ':m .+1<CR>==') -- move line up(n)
+vim.keymap.set('n', '<A-k>', ':m .-2<CR>==') -- move line down(n)
+vim.keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv") -- move line up(v)
+vim.keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv") -- move line down(v)
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
